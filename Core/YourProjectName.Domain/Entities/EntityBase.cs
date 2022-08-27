@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace YourProjectName.Domain.Entities
+namespace PostService.Domain.Entities
 {
     [ExcludeFromCodeCoverage]
     public abstract class EntityBase

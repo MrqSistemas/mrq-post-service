@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -12,9 +12,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Adapters\YourProjectName.Repository\PostService.Repository.csproj" />
-    <ProjectReference Include="..\..\Core\YourProjectName.Application\YourProjectName.Application.csproj" />
-    <ProjectReference Include="..\..\Core\YourProjectName.Business\YourProjectName.Business.csproj" />
-    <ProjectReference Include="..\..\Core\YourProjectName.Domain\YourProjectName.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\YourProjectName.Application\PostService.Application.csproj" />
+    <ProjectReference Include="..\..\Core\YourProjectName.Business\PostService.Business.csproj" />
+    <ProjectReference Include="..\..\Core\YourProjectName.Domain\PostService.Domain.csproj" />
   </ItemGroup>
 
 </Project>

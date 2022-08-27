@@ -1,4 +1,4 @@
-namespace YourProjectName.Business.Test
+namespace PostService.Business.Test
 {
     public class UnitTest1
     {

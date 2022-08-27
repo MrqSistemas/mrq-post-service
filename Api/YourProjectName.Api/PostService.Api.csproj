@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -13,9 +13,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Adapters\YourProjectName.Repository\PostService.Repository.csproj" />
-    <ProjectReference Include="..\..\Infra\YourProjectName.Infra\YourProjectName.Infra.csproj" />
+    <ProjectReference Include="..\..\Infra\YourProjectName.Infra\PostService.Infra.csproj" />
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><PostProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

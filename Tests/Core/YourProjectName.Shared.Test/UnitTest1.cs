@@ -1,4 +1,4 @@
-namespace YourProjectName.Shared.Test
+namespace PostService.Shared.Test
 {
     public class UnitTest1
     {

@@ -1,27 +1,27 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using YourProjectName.Application.Applications;
-using YourProjectName.Business.Users;
-using YourProjectName.Domain.Adapters;
-using YourProjectName.Domain.Business;
-using YourProjectName.Repository.Users;
+using PostService.Application.Applications;
+using PostService.Business.Posts;
+using PostService.Domain.Adapters;
+using PostService.Domain.Business;
+using PostService.Repository.Posts;
 
-namespace YourProjectName.Infra.Configurations
+namespace PostService.Infra.Configurations
 {
     public class ConfigureServices
     {
         public static void AddApplications(IServiceCollection services)
         {
-            services.AddScoped<IUserApplication, UserApplication>();
+            services.AddScoped<IPostApplication, PostApplication>();
         }
 
         public static void AddBusiness(IServiceCollection services)
         {
-            services.AddScoped<IUserBusiness, UserBusiness>();
+            services.AddScoped<IPostBusiness, PostBusiness>();
         }
 
         public static void AddAdapters(IServiceCollection services)
         {
-            services.AddScoped<IUserAdapter, UserRepositorySqlServer>();
+            services.AddScoped<IPostAdapter, PostRepositorySqlServer>();
         }
     }
 }

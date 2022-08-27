@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using YourProjectName.Infra.Configurations;
-using YourProjectName.Repository.Context;
+using PostService.Infra.Configurations;
+using PostService.Repository.Context;
 
 var _builder = WebApplication.CreateBuilder(args);
 var _services = _builder.Services;

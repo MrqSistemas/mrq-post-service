@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "YourProjectName.Api": {
+    "PostService.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

@@ -1,4 +1,4 @@
-namespace YourProjectName.Repository.Test
+namespace PostService.Repository.Test
 {
     public class UnitTest1
     {

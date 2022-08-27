@@ -1,4 +1,4 @@
-namespace YourProjectName.Infra.Test
+namespace PostService.Infra.Test
 {
     public class UnitTest1
     {

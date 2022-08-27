@@ -1,4 +1,4 @@
-namespace YourProjectName.Api.Test
+namespace PostService.Api.Test
 {
     public class UnitTest1
     {

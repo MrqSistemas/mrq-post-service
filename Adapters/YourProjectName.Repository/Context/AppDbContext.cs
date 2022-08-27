@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using YourProjectName.Domain.Entities.Users;
+using PostService.Domain.Entities.Posts;
 
-namespace YourProjectName.Repository.Context
+namespace PostService.Repository.Context
 {
     public class AppDbContext : DbContext
     {
@@ -35,6 +35,6 @@ namespace YourProjectName.Repository.Context
 
         }
 
-        public DbSet<User>? Users { get; set; }
+        public DbSet<Post>? Posts { get; set; }
     }
 }

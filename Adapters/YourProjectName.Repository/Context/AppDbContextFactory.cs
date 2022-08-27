@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace YourProjectName.Repository.Context
+namespace PostService.Repository.Context
 {
     public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     {
@@ -10,7 +10,7 @@ namespace YourProjectName.Repository.Context
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
             optionsBuilder
-                .UseSqlServer("Data Source=DSKUSRWIN01\\SQLEXPRESS;Initial Catalog=TemplateDB;Integrated Security=True");
+                .UseSqlServer("Data Source=DESKTOP-GGHN154\\SQLEXPRESS;Initial Catalog=BDPosts;Integrated Security=True");
 
             return new AppDbContext(optionsBuilder.Options);
         }

@@ -9,25 +9,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{5E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{66BD73A9-106B-425B-BAC4-F6B65E64CDBA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProjectName.Api", "Api\YourProjectName.Api\YourProjectName.Api.csproj", "{3F448522-BE11-4B89-85B6-0B8C913CCD9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Api", "Api\YourProjectName.Api\PostService.Api.csproj", "{3F448522-BE11-4B89-85B6-0B8C913CCD9D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{B90CDF56-922E-43A5-B432-C954EB7123EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1EB6D8A0-B0CD-467A-9B30-C6A93A3F32CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProjectName.Application", "Core\YourProjectName.Application\YourProjectName.Application.csproj", "{FCD40B6B-3550-43DD-B84B-C135DC79BDE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Application", "Core\YourProjectName.Application\PostService.Application.csproj", "{FCD40B6B-3550-43DD-B84B-C135DC79BDE1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2D885BE3-39B3-4A80-B2E1-96E363A8671A} = {2D885BE3-39B3-4A80-B2E1-96E363A8671A}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProjectName.Business", "Core\YourProjectName.Business\YourProjectName.Business.csproj", "{C40DFEE0-B21C-4164-880F-0CE09694AC2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Business", "Core\YourProjectName.Business\PostService.Business.csproj", "{C40DFEE0-B21C-4164-880F-0CE09694AC2D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2D885BE3-39B3-4A80-B2E1-96E363A8671A} = {2D885BE3-39B3-4A80-B2E1-96E363A8671A}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProjectName.Domain", "Core\YourProjectName.Domain\YourProjectName.Domain.csproj", "{2D885BE3-39B3-4A80-B2E1-96E363A8671A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Domain", "Core\YourProjectName.Domain\PostService.Domain.csproj", "{2D885BE3-39B3-4A80-B2E1-96E363A8671A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProjectName.Shared", "Core\YourProjectName.Shared\YourProjectName.Shared.csproj", "{65360BB0-D295-4044-AE7C-2B0E8DE3CF4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Shared", "Core\YourProjectName.Shared\PostService.Shared.csproj", "{65360BB0-D295-4044-AE7C-2B0E8DE3CF4B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Integration", "Adapters\YourProjectName.Integration\PostService.Integration.csproj", "{7CAFF5D9-9350-417A-8E4A-AB6CF36F52AF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Repository", "Adapters\YourProjectName.Repository\PostService.Repository.csproj", "{03BF6456-E466-4046-9DBF-99F83C83AD5B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProjectName.Infra", "Infra\YourProjectName.Infra\YourProjectName.Infra.csproj", "{6DDF1660-F946-4673-AEB7-9203095605FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Infra", "Infra\YourProjectName.Infra\PostService.Infra.csproj", "{6DDF1660-F946-4673-AEB7-9203095605FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{79B434C1-3BF9-4D4B-8A7F-511BC3780935}"
 EndProject
