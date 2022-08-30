@@ -40,8 +40,6 @@ namespace PostService.Repository.Posts
         {
             Post addPost = _mapper.Map<Post>(Post);
 
-            addPost.Data_Publicacao = DateTime.Now;
-
             await _appDbContext.Set<Post>().AddAsync(addPost);
 
             _appDbContext.SaveChanges();

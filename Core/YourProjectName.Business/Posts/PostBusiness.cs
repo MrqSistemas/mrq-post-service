@@ -25,6 +25,8 @@ namespace PostService.Business.Posts
 
         public async Task<bool> Add(PostDto Post)
         {
+            Post.Data_Publicacao = DateTime.UtcNow.AddHours(-3);
+
             return await _PostAdapter.Add(Post);
         }
 
